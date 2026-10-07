@@ -1,0 +1,8 @@
+services:
+  tracker:
+    build: .
+    ports:
+      - "8080:7860"
+    env_file:
+      - .env
+    restart: unless-stopped
